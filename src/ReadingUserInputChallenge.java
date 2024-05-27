@@ -4,13 +4,15 @@ public class ReadingUserInputChallenge {
     public static void main(String[] args) {
 
         int numbers = 1;
-        int sum = 0;
+        // int sum = 0;
+        double sum = 0;
         do {
             System.out.println("Enter number #" + numbers);
             Scanner scanner = new Scanner(System.in);
             try {
                 String number = scanner.nextLine();
-                sum += Integer.parseInt(number);
+               // sum += Integer.parseInt(number);
+                sum += Double.parseDouble(number);
                 numbers++;
             } catch (NumberFormatException badUserData) {
                 System.out.println("Characters are not allowed, try again!!");
